@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: lightgray;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+
+div{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+div.container{
+    margin-top: 50px;
+    max-width: 1000px;
+    border-radius: 17px;
+    
+}
+
+/*-------TOPMOST BAR-------*/
+
+.intern_header{
+    width: 100%;
+    
+}
+
+
+.intern_top{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(128,128,128,0.5);
+    border-radius: 0px;
+}
+
+.intern_num{
+    text-align: center;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: gray;
+    border-radius: 50%
+}
+
+.intern_timer{
+    padding: 3px 9px;
+    color: gray;
+    background-color: white;
+    box-shadow: 0px 1px 0px gray;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+
+.intern_pos{
+    width: 12px;
+    margin-right: 1px;
+    color: white;
+    background-color: forestgreen;
+    border-radius: 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 8px;
+}
+
+.intern_neg{
+    padding: 8px;
+    margin-left: 1px;
+    color: white;
+    background-color: red;
+    letter-spacing: 2px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+.intern_statement{
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+
+
+
+
+
+.intern_nop{
+    margin-top: 10px !important;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px !important;
+    transition: 0.5s;
+}
+
+.intern_ans{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.intern_ques{
+    margin-top: 30px !important;
+    display: flex;
+    position: relative;
+    left: -17%;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+.intern_ques .intern_bold{
+    font-weight: 500;
+}
+
+
+
+.intern_one, .intern_two, .intern_three, .intern_four{
+    
+    margin-right: 25px;
+    border:0.5px solid gray;
+    padding: 3px 6px;
+    border-radius: 65%;
+    transition: 0.5s;
+}
+
+
+
+.intern_next{
+    position: relative;
+    left: 40%;
+    top: 50%;
+    transform: translate(50%,50%);
+    width: 100px;
+    height: 50px;
+}
+
+.intern_prev{
+    position: relative;
+    left: 15%;
+    top: 50%;
+    transform: translate(0%,50%);
+    width: 100px;
+    height: 50px;
+    
+}
+
+input[type="submit"]{
+     position: relative;
+    left: 52%;
+    top: 50%;
+    transform: translate(0%,50%);
+    width: 100px;
+    height: 50px;
+}
+
+button, input[type="submit"]{
+    color: white;
+    background-color: skyblue;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+.row{
+    background-color: transparent !important;
+    width: 100%;
+}
+
+
+
+/*To do in JS*/
+
+.func {
+    background-color: transparent !important;
+    border:1px solid dodgerblue;
+}
+
+.func-indi{
+    color: white;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+
+
+
+
+@media(max-width:992px){
+    .intern_prev, .intern_next, input[type="submit"]{
+        width: 50px;
+        font-size: 10px;
+    }
+    
+    input[type="submit"]{
+        width: 100px !important;
+        left: 40%;
+    }
+    
+    .intern_next{
+        left: 33.5%;
+    }
+}
+
